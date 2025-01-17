@@ -6,6 +6,14 @@
             table, th, td {
                 border: 1px solid black
             }
+            table {
+                border-spacing: 3px;
+            }
+            th, td {
+                padding: 3px;
+                vertical-align: top;
+                text-align: left
+            }
             a {
                 text-decoration: none;
                 color:deepskyblue;
@@ -26,7 +34,25 @@
             ::selection {
                 color: aquamarine;
             }
-
+            
+            .STAT {
+                background-color:aqua;
+            }
+            .C {
+                background-color: yellow;
+            }
+            .data {
+                background-color: darkolivegreen;
+            }
+            .web {
+                background-color: darkmagenta;
+            }
+            .hw {
+                background-color: hotpink;
+            }
+            .commute {
+                background-color: darkorange;
+            }
         </style>
     </head>
     <body>
@@ -73,86 +99,60 @@
             </tr>
             <tr>
                 <th>11:00</th>
-                <td rowspan="2">STAT 2050</td>
-                <td rowspan="2">STAT 2050</td>
-                <td rowspan="2">STAT 2050</td>
-                <td rowspan="2">STAT 2050</td>
-                <td></td>
+                <td rowspan="2" class="STAT">STAT 2050</td>
+                <td rowspan="2" class="STAT">STAT 2050</td>
+                <td rowspan="2" class="STAT">STAT 2050</td>
+                <td rowspan="2" class="STAT">STAT 2050</td>
+                <td rowspan="6" class="hw">Homework</td>
             </tr>
             <tr>
                 <th>11:30</th>
-                
-                
-
-                <td></td>
             </tr>
             <tr>
                 <th>12:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td rowspan="5" class="hw">Homework</td>
+                <td rowspan="2" class="hw">Homework</td>
+                <td rowspan="5" class="hw">Homework</td>
+                <td rowspan="2" class="hw">Homework</td>
             </tr>
             <tr>
                 <th>12:30</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <th>1:00</th>
-                <td></td>
-                <td rowspan="3">CS 2420</td>
-                <td></td>
-                <td rowspan="3">CS 2420</td>
-                <td></td>
+                
+                <td rowspan="3" class="data">CS 2420</td>
+                
+                <td rowspan="3" class="data">CS 2420</td>
+               
             </tr>
             <tr>
                 <th>1:30</th>
-                <td></td>
-
-                <td></td>
-
-                <td></td>
             </tr>
             <tr>
                 <th>2:00</th>
-                <td></td>
-
-                <td></td>
-
-                <td></td>
+                <td rowspan="4" style="background-color: aquamarine;">Free time</td>
             </tr>
             <tr>
                 <th>2:30</th>
-                <td rowspan="3">CS 2370</td>
-                <td rowspan="3">CS 2550</td>
-                <td rowspan="3">CS 2370</td>
-                <td rowspan="3">CS 2550</td>
-                <td></td>
+                <td rowspan="3" class="C">CS 2370</td>
+                <td rowspan="3" class="web">CS 2550</td>
+                <td rowspan="3" class="C">CS 2370</td>
+                <td rowspan="3" class="web">CS 2550</td>
             </tr>
             <tr>
                 <th>3:00</th>
-
-
-                <td></td>
             </tr>
             <tr>
                 <th>3:30</th>
-
-
-                <td></td>
             </tr>
             <tr>
                 <th>4:00</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="commute">Commute home</td>
+                <td class="commute">Commute home</td>
+                <td class="commute">Commute home</td>
+                <td class="commute">Commute home</td>
+                <td style="background-color: blueviolet;">Get ready for work</td>
             </tr>
         </table>
 
