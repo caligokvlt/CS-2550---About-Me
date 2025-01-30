@@ -1,0 +1,85 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(strawberry_cow.jpg);
+    background-repeat: repeat;
+    font-size: 12pt;
+    margin: 10px;
+    padding: 25px;
+}
+h1 {
+    font-size: 40pt;
+    font-family: 'Papyrus';
+    background-image: url("GCD.jpg");
+    
+}
+
+p::before {
+    content: "    ";
+    white-space: pre;
+}
+
+p {
+    padding: 5pt;
+}
+
+table, th, td {
+    border: 1px solid black
+}
+table {
+    border-spacing: 3px;
+    width: 40%;
+}
+th, td {
+    padding: 3px;
+    vertical-align: top;
+    text-align: left
+}
+td {
+    width: 16%;
+}
+a {
+    text-decoration: none;
+    color:rgb(104, 0, 0);
+}
+a:hover {
+    text-decoration: underline;
+    color:rgb(20, 0, 0);
+}
+a:active {
+    color:rgb(255, 0, 0);
+}
+
+
+::selection {
+    color: rgb(153, 0, 0);
+}
+
+.STAT {
+    background-color:aqua;
+}
+.C {
+    background-color: yellow;
+}
+.data {
+    background-color: darkolivegreen;
+}
+.web {
+    background-color: darkmagenta;
+}
+.hw {
+    background-color: hotpink;
+}
+.commute {
+    background-color: darkorange;
+}
+.get_ready {
+    background-color: blueviolet;
+}
+.free_time {
+    background-color: aquamarine;
+}
+.haiku {
+    text-align: center;
+    width: 500px;
+}

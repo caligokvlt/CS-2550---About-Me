@@ -13,68 +13,13 @@ I acknowledge that  If I am found in violation of this policy this may result
 in a zero grade, a permanent record on file and possibly immediate failure of the class.
  
 Reflection (1-2 paragraphs):  I had fun with this project! I hadn't set up a github repository so I had to learn how to do that but it was fairly easy sailing from there! Excited to 
-do more web development. It is quite fun. Html and CSS are not bad so far!
+do more web development.
  
 -->
 <html>
     <head>
+        <link rel="stylesheet" href="css/stylesheet.css">
         <title>About Zoe Green</title>
-        <style>
-            table, th, td {
-                border: 1px solid black
-            }
-            table {
-                border-spacing: 3px;
-                width: 40%;
-            }
-            th, td {
-                padding: 3px;
-                vertical-align: top;
-                text-align: left
-            }
-            td {
-                width: 16%;
-            }
-            a {
-                text-decoration: none;
-                color:deepskyblue;
-            }
-            a:hover {
-                text-decoration: underline;
-                color:cyan;
-            }
-            a:active {
-                color:rgb(159, 159, 255);
-            }
-
-            body {
-                font-family:'Courier New', Courier, monospace;
-                background-image: url(strawberry_cow.jpg);
-                background-repeat: repeat;
-            }
-            ::selection {
-                color: aquamarine;
-            }
-            
-            .STAT {
-                background-color:aqua;
-            }
-            .C {
-                background-color: yellow;
-            }
-            .data {
-                background-color: darkolivegreen;
-            }
-            .web {
-                background-color: darkmagenta;
-            }
-            .hw {
-                background-color: hotpink;
-            }
-            .commute {
-                background-color: darkorange;
-            }
-        </style>
     </head>
     <body>
         <h1>Zoe Green</h1>
@@ -99,7 +44,7 @@ do more web development. It is quite fun. Html and CSS are not bad so far!
 
         <h2>Haiku</h2>
         <p>It was a cold day today. I was inspired to write this.</p>
-        <div  style="text-align: center; width: 350px;">
+        <div  class="haiku">
             <h2>Wintry Winds</h2>
             Winter's chilled winds blow<br>
             Over the exposed barren path<br>
@@ -154,7 +99,7 @@ do more web development. It is quite fun. Html and CSS are not bad so far!
             </tr>
             <tr>
                 <th>2:00</th>
-                <td rowspan="4" style="background-color: aquamarine;">Free time</td>
+                <td rowspan="4" class="free_time">Free time</td>
             </tr>
             <tr>
                 <th>2:30</th>
@@ -175,12 +120,11 @@ do more web development. It is quite fun. Html and CSS are not bad so far!
                 <td class="commute">Commute home</td>
                 <td class="commute">Commute home</td>
                 <td class="commute">Commute home</td>
-                <td style="background-color: blueviolet;">Get ready for work</td>
+                <td class="get_ready">Get ready for work</td>
             </tr>
+
         </table>
 
     </body>
-
-
 
 </html>
