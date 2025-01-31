@@ -4,6 +4,7 @@ body {
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: fill;
+    background-attachment: fixed;
     font-size: 12pt;
     margin: 0% 5%;
     padding: 0px;
@@ -14,7 +15,10 @@ body {
 
 }
 
+.web_content {
+    justify-content: center;
 
+}
 
 h1 {
     font-family: 'Papyrus';
@@ -68,7 +72,7 @@ table {
     margin: 1% 0% 1% 22%;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 8px solid rgb(29, 0, 0);
+    border: 8px solid rgb(0, 0, 0);
     border-image: url(h2background.jpg);
 
 
@@ -110,31 +114,32 @@ a:active {
 
 .STAT {
     background-color:rgb(255, 0, 0);
+    color:rgb(0, 0, 0)
 }
 .C {
     background-color: rgb(255, 0, 0);
+    color: black;
 }
 .data {
     background-color: rgb(139, 0, 0);
-    color:rgb(0, 0, 0)
 }
 .web {
     background-color: rgb(68, 0, 0);
-    color:rgb(221, 0, 0);
 }
 .hw {
     background-color: rgb(189, 0, 0);
+    color:#000000
 }
 .commute {
     background-color: rgb(39, 0, 0);
-    color:rgb(255, 0, 0)
+
 }
 .get_ready {
     background-color: rgb(136, 0, 7);
 }
 .free_time {
     background-color: rgb(27, 0, 0);
-    color:rgb(255, 0, 0);
+    /*color:rgb(255, 0, 0);*/
 }
 .haiku {
     text-align: center;
