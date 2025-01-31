@@ -51,27 +51,38 @@ p {
     padding: 5pt;
 }
 
-table, th, td {
+/*table, th, td {
     border: 3px solid black;
     border-image: url(h2background.jpg) 3 round;
-}
+}*/
 
 table {
     table-layout: fixed;
     width: 750px;
-    margin: 0% 0% 0% 22%;
+    margin: 1% 0% 1% 22%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 8px solid rgb(29, 0, 0);
+    border-image: url(h2background.jpg);
+
 
 }
 th, td {
     padding: 3px;
     vertical-align: top;
     text-align: left;
+    border-bottom: 2px solid;
+    border-color: rgb(49, 0, 0);
 }
 th {
     width: 120px;
     font-weight: bold;
     background-image: url(GCD.jpg);
     text-align: center;
+    padding: 10px;
+}
+td {
+    padding: 10px;
 }
 
 a {
