@@ -1,17 +1,63 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: url(strawberry_cow.jpg);
-    background-repeat: repeat;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-attachment: fixed;
     font-size: 12pt;
-    margin: 10px;
-    padding: 25px;
+    margin: 0% 5%;
+    padding: 0px;
+    border: solid 10px;
+    border-image: url(h2background.jpg) 10 round;
+    background-color: #520202;
+    color:rgb(231, 138, 138);
+
 }
+th.light {
+    background-image: url(lighttexture.jpg);
+}
+th.dark {
+    background-image: url(darktexture.jpg);
+}
+
+
+
+.web_content {
+    justify-content: center;
+
+}
+
 h1 {
-    font-size: 40pt;
     font-family: 'Papyrus';
-    background-image: url("GCD.jpg");
+    font-size: 40pt;
+    color:rgb(129, 0, 17);
+    background-image: url("h1background.jpg");
+    margin: 0%;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 3px 2px #000000;  
+}
+
+h2 {
+    font-family: 'Papyrus';
+    font-size: 25pt;
+    color: rgb(133, 0, 0);
+    border-top: solid 10px black;
+    border-bottom: solid 10px black;
+    background-image: url("h2background.jpg");
+    margin: 0%; /*hopefully this is ok, much prefer the look :3 */
+    text-shadow: 3px 2px #000000;
     
+}
+img {
+    margin: 7% 3%;
+    width: 18%;
+    height: auto;
+    float: right;
+    border: 15px solid transparent;
+    border-image: url(h2background.jpg) 30 round;
+    box-shadow: 8px 10px 10px #000000;
 }
 
 p::before {
@@ -23,24 +69,42 @@ p {
     padding: 5pt;
 }
 
-table, th, td {
-    border: 1px solid black
-}
+/*table, th, td {
+    border: 3px solid black;
+    border-image: url(h2background.jpg) 3 round;
+}*/
+
 table {
-    border-spacing: 3px;
-    width: 40%;
+    table-layout: fixed;
+    width: 750px;
+    margin: 1% 0% 1% 22%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 8px solid rgb(0, 0, 0);
+    border-image: url(h2background.jpg);
+
+
 }
 th, td {
     padding: 3px;
     vertical-align: top;
-    text-align: left
+    text-align: left;
+    border-bottom: 2px solid;
+    border-color: rgb(49, 0, 0);
+}
+th {
+    width: 120px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 td {
-    width: 16%;
+    padding: 10px;
 }
+
 a {
     text-decoration: none;
-    color:rgb(104, 0, 0);
+    color:rgb(212, 0, 0);
 }
 a:hover {
     text-decoration: underline;
@@ -52,34 +116,54 @@ a:active {
 
 
 ::selection {
-    color: rgb(153, 0, 0);
+    color:rgb(255, 28, 28);
 }
 
 .STAT {
-    background-color:aqua;
+    background-color:rgb(255, 0, 0);
+    color:rgb(0, 0, 0)
+}
+.STAT::selection {
+    color: rgb(231, 138, 138)
 }
 .C {
-    background-color: yellow;
+    background-color: rgb(255, 0, 0);
+    
+}
+.C::selection {
+    color:black;
 }
 .data {
-    background-color: darkolivegreen;
+    background-color: rgb(139, 0, 0);
 }
 .web {
-    background-color: darkmagenta;
+    background-color: rgb(68, 0, 0);
 }
 .hw {
-    background-color: hotpink;
+    background-color: rgb(189, 0, 0);
+    color:#000000
 }
 .commute {
-    background-color: darkorange;
+    background-color: rgb(39, 0, 0);
+
 }
 .get_ready {
-    background-color: blueviolet;
+    background-color: rgb(136, 0, 7);
 }
 .free_time {
-    background-color: aquamarine;
+    background-color: rgb(27, 0, 0);
+    /*color:rgb(255, 0, 0);*/
 }
 .haiku {
     text-align: center;
-    width: 500px;
+    width: 25%;
+    margin: 0% 35% 3.5%;
+    border: solid 10px black;
+    border-image: url(h2background.jpg) 10;
 }
+
+h2.no_border {
+    border: none !important;
+}
+
+
