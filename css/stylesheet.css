@@ -12,6 +12,7 @@ body {
     border-image: url(h2background.jpg) 10 round;
     background-color: #520202;
     color:rgb(231, 138, 138);
+    padding-top: 80px;
 
 }
 th.light {
@@ -21,11 +22,59 @@ th.dark {
     background-image: url(darktexture.jpg);
 }
 
-
-
 .web_content {
     justify-content: center;
+    margin-left: 95px;
+}
 
+.sidebar {
+    width: 200px;
+    position: fixed;
+    left: 0px;
+    top: 90px;
+    background-color: #520202;
+    height: 100%;
+    border: solid 3px black;
+    box-sizing: border-box;
+}
+
+.heading {
+    grid-area: heading;
+    position: fixed;
+    width: 100%;
+    border: solid black 5px;
+    left: 0px;
+    top: 0px;
+    
+
+}
+
+.personal {
+    grid-area: personal;
+}
+
+.book {
+    grid-area: book;
+    margin: auto;
+}
+
+.div_haiku {
+    grid-area: haiku;
+    margin: auto;
+}
+
+.interests {
+    grid-area: interests;
+    margin: auto;
+}
+
+.schedule {
+    grid-area: schedule;
+    margin: auto;
+}
+
+.my_picture {
+    grid-area: picture;
 }
 
 h1 {
