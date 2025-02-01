@@ -14,6 +14,14 @@ body {
     color:rgb(231, 138, 138);
 
 }
+th.light {
+    background-image: url(lighttexture.jpg);
+}
+th.dark {
+    background-image: url(darktexture.jpg);
+}
+
+
 
 .web_content {
     justify-content: center;
@@ -87,7 +95,6 @@ th, td {
 th {
     width: 120px;
     font-weight: bold;
-    background-image: url(GCD.jpg);
     text-align: center;
     padding: 10px;
 }
@@ -152,4 +159,5 @@ a:active {
 h2.no_border {
     border: none !important;
 }
+
 
