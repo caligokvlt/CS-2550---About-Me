@@ -116,16 +116,22 @@ a:active {
 
 
 ::selection {
-    color:rgb(221, 0, 0);
+    color:rgb(255, 28, 28);
 }
 
 .STAT {
     background-color:rgb(255, 0, 0);
     color:rgb(0, 0, 0)
 }
+.STAT::selection {
+    color: rgb(231, 138, 138)
+}
 .C {
     background-color: rgb(255, 0, 0);
-    color: black;
+    
+}
+.C::selection {
+    color:black;
 }
 .data {
     background-color: rgb(139, 0, 0);
