@@ -8,11 +8,12 @@ function openPage(pageName) {
 }
 lightMode = false;
 darkMode = true;
+currentMode = document.createElement("link");
+currentMode.rel = "stylesheet";
+currentMode.href = "CSS/darkmode.css";
+head = document.head;
+head.appendChild(currentMode);
 function toggleLightDark() {
-    let currentMode = document.createElement("link");
-    currentMode.rel = "stylesheet";
-    currentMode.href = "CSS/darkmode.css";
-    let head = document.head;
     if (darkMode == true) {
         lightMode = true;
         darkMode = false;
@@ -23,5 +24,4 @@ function toggleLightDark() {
         darkMode = true;
         currentMode.href = "CSS/darkmode.css";
     }
-    head.appendChild(currentMode);
 }
