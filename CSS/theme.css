@@ -1,4 +1,8 @@
-/*Dark mode - default*/
+/*
+    This is the 'darkmode' theme. It is toggled by default, after being initially created and inserted into index.html using JavaScript in myscript.js. 
+    - Moved all the colors from main.css to this stylesheet to avoid duplicates
+    - moved the default grid layouts to this stylesheet as they are modified when lightmode is toggled
+*/
 @media screen and (min-width: 769px) {
     /* for desktop view */
     .grid-container {

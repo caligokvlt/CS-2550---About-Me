@@ -1,4 +1,8 @@
-/*Light mode - hidden by default*/
+/*
+    - This is the 'light mode' theme. It is not shown by default and must be toggled by the light/darkmode button. 
+    - Added alternate colors for all the styles in theme.css for 'light mode'
+    - Added alternate grid layouts and flexbox layouts for 'light mode'
+*/
 @media screen and (min-width: 769px) {
     /* for desktop view */
     .grid-container {
