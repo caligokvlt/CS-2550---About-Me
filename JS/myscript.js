@@ -10,7 +10,7 @@ lightMode = false;
 darkMode = true;
 currentMode = document.createElement("link");
 currentMode.rel = "stylesheet";
-currentMode.href = "CSS/darkmode.css";
+currentMode.href = "CSS/theme.css";
 head = document.head;
 head.appendChild(currentMode);
 function toggleLightDark() {
@@ -22,6 +22,6 @@ function toggleLightDark() {
     else {
         lightMode = false;
         darkMode = true;
-        currentMode.href = "CSS/darkmode.css";
+        currentMode.href = "CSS/theme.css";
     }
 }
