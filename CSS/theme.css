@@ -1,37 +1,27 @@
 /*
-    This is the 'darkmode' theme. It is toggled by default, after being initially created and inserted into index.html using JavaScript in myscript.js. 
-    - Moved all the colors from main.css to this stylesheet to avoid duplicates
-    - moved the default grid layouts to this stylesheet as they are modified when lightmode is toggled
+    - This is the 'light mode' theme. It is not shown by default and must be toggled by the light/darkmode button. 
+    - Added alternate colors for all the styles in theme.css for 'light mode'
+    - Added alternate grid layouts and flexbox layouts for 'light mode'
 */
 @media screen and (min-width: 769px) {
     /* for desktop view */
     .grid-container {
-        grid-template-areas: "main-one main-one main-one main-two"
-                             "main-three main-three main-four main-four"
+        grid-template-areas: "main-four main-four main-three main-three"
+                             "main-two main-one main-one main-one"
                              "footer footer footer footer";
     }
-    .grid-container-media {
-        grid-template-areas: "media-one media-two media-three media-four"
-                             "media-five media-six media-seven media-eight";
-    }
     .grid-container-contact {
-        grid-template-areas: "contact-one contact-two"
+        grid-template-areas: "contact-two contact-one"
                              "contact-footer contact-footer";
     }
 }
 @media screen and (max-width: 768px) {
     /* for tablet view */
     .grid-container {
-        grid-template-areas: "main-one main-one main-one main-two"
+        grid-template-areas: "main-four main-four main-four main-four"
                              "main-three main-three main-three main-three"
-                             "main-four main-four main-four main-four"
+                             "main-two main-one main-one main-one"
                              "footer footer footer footer";
-    }
-    .grid-container-media {
-        grid-template-areas: "media-one media-one media-two media-two"
-                             "media-three media-three media-four media-four"
-                             "media-five media-five media-six media-six"
-                             "media-seven media-seven media-eight media-eight";
     }
     .grid-container-contact {
         grid-template-areas: "contact-one contact-one"
@@ -39,45 +29,69 @@
                              "contact-footer contact-footer";
     }
 }
-/*non size dependent normal content*/
 html, body {
-    background-color: #080000;
-    color: whitesmoke;
+    background-color: #ebe2d7;
+    color: rgb(39, 36, 36);
 }
 header {
-    background-color: #1d0f0f;
+    background-color: #dacdc7;
     text-shadow: 2px 2px 5px rgb(73, 57, 57);
-    box-shadow: inset 0 0 1vh #382125;
-    border-bottom: 0.1vh solid #362024; /*border, but does provide color*/
+    box-shadow: inset 0 0 1vh #585045;
+    border-bottom: 0.1vh solid #dacdc7; /*border, but does provide color*/
 }
 .flex-container-media {
-    background-color: #2e020a;
-    border: 2vh solid #110405; /*border, but does provide color*/
+    background-color: #c9a899;
+    border: 2vh solid #968479; /*border, but does provide color*/
+    flex-direction: row-reverse;
 }
 .grid-container > div, .grid-container-media > div, .grid-container-contact > div {
-    background-color: #2e020a;
-    color: white;
+    background-color: #c9a899;
+    color: rgb(39, 36, 36);
 }
 .grid-container, .grid-container-media, .grid-container-contact {
-    background-color: #110405;
+    background-color: #968479;
 }
 figure img {
-    border: 1vh solid #110405;
+    border: 1vh solid #ebe2d7;
 }
 nav {
-    background-color: #110a0a;
-    box-shadow: inset 0 0 1vh #3a1c21;
-    box-shadow: .5vh .5vh 0.5vh #270c113f;
+    background-color: #c2bbb9;
+    box-shadow: inset 0 0 1vh #99695b;
+    box-shadow: .5vh .5vh 0.5vh #3b25108a;
 }
 button {
-    background-color: #2c0d12;
+    background-color: #3b25108a;
     color: white;
-    box-shadow: inset 0 0 1vh #701f2c6c;
+    box-shadow: inset 0 0 1vh #ebe2d7;
     box-shadow: .5vh .5vh 0.5vh #270c113f;
 }
 #media-footer {
-    background-color: #2e020a;
-    border-bottom: 1vw solid #110405; /*border, but does provide color*/
-    border-left: 1vw solid #110405; /*border, but does provide color*/
-    border-right: 1vw solid #110405; /*border, but does provide color*/
+    background-color: #c9a899;
+    border-bottom: 1vw solid #968479; /*border, but does provide color*/
+    border-left: 1vw solid #968479; /*border, but does provide color*/
+    border-right: 1vw solid #968479; /*border, but does provide color*/
+}
+#media-one {
+    order: 5;
+}
+#media-two {
+    order: 6;
+}
+#media-three {
+    order: 7;
+}
+#media-four {
+    order: 8;
+}
+#media-five {
+    order: 1;
+}
+#media-six {
+    order: 2;
+}
+#media-seven {
+    order: 3;
+}
+#media-eight {
+    order: 4;
 }
