@@ -1,166 +1,103 @@
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-areas: "main-one main-one main-one main-two"
-                             "main-three main-three main-three main-three"
-                             "main-four main-four main-four main-four"
-                             "footer footer footer footer";
-    }
-    
-    .grid-container-media {
-        grid-template-areas: "media-one media-one media-two media-two"
-                             "media-three media-three media-four media-four"
-                             "media-five media-five media-six media-six"
-                             "media-seven media-seven media-eight media-eight";
-    }
-    
-    .grid-container-contact {
-        grid-template-areas: "contact-one contact-one contact-one contact-one"
-                             "contact-two contact-two contact-two contact-two"
-                             "contact-three contact-three contact-three";
-    }
-    .flex-container-media {
-        background-color: #110405;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding: 2%;
-        height: 80%;
-        margin: 2%;
-        justify-content: center;
-    }
+@media screen and (min-width: 769px) {
+    /* for desktop view */
     .flex-container-media > div {
-        width: 100%;
-        margin: 1%;
+        margin: 1vw;
     }
-    
+    .flex-container-media img, .flex-container-media iframe, .flex-container-media figure {
+        width: 50vh;
+    }
+    figure figcaption{
+        margin-top: 1vh;
+    }
+    figcaption {
+        max-width: 300px;
+    }
+    .grid-container, .grid-container-media, .grid-container-contact {
+        grid-row-gap: 0.5vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* for tablet view */
     .flex-container-media img, .flex-container-media iframe, .flex-container-media figure {
         width: 92%;
         height: auto;
         max-width: 100%;
     }
-    figure img {
-        border: 5px solid #2e020a;
-    }
-
     .grid-container, .grid-container-media, .grid-container-contact {
-        background-color: #110405;
-        padding: 1%;
-        height: 100%;
-        display: grid;
-        
-
-       
+        grid-row-gap: 1.5vw;
     }
-
 }
-
-
-@media screen and (min-width: 769px) {
-    .grid-container {
-        grid-template-areas: "main-one main-one main-one main-two"
-                             "main-three main-three main-four main-four"
-                             "footer footer footer footer";
-    }
-    
-    .grid-container-media {
-        grid-template-areas: "media-one media-two media-three media-four"
-                             "media-five media-six media-seven media-eight";
-    }
-    
-    
-    .grid-container-contact {
-        grid-template-areas: "contact-one contact-two"
-                             "contact-three contact-three";
-    }
-    .flex-container-media {
-        background-color: #110405;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2vh;
-        margin: 2vh;
-        justify-content: center;
-    }
-    
-    .flex-container-media > div {
-        height: 38%;
-        margin: 1%;
-    }
-    
+@media screen and (max-width: 450px) {
+    /* for mobile */
     .flex-container-media img, .flex-container-media iframe, .flex-container-media figure {
-        width: 50vh;
+        width: 25vh;
     }
-    
-    figure figcaption{
-        margin-top: 1vh;
-    }
-    
-    figure img {
-        border: 5px solid #2e020a;
-    }
-    
-    
-    figcaption {
-        max-width: 300px;
-    }
-
-    .grid-container, .grid-container-media, .grid-container-contact {
-        background-color: #110405;
-        padding: 1%;
-        height: 95%;
-        margin: 1%;
-        display: grid;
-        grid-row-gap: 1%;
-        grid-column-gap: 0.5%;
+    #main-two img {
+        height: 50vw;
     }
 
 }
-
-
-.grid-container > div, .grid-container-media > div, .grid-container-contact > div{
-    background-color: #2e020a;
-    color: white;
-}
-
+/* start of normal content CSS (not size dependent) */
 html, body {
     margin: 0;
-    background-color: #080000;
     font-family: Arial, Helvetica, sans-serif;
-    color: whitesmoke;
 }
-
-
+header {
+    padding: 0;
+    height: 10vh;
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+    margin: 0;
+}
+.flex-container-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 2vh;
+}
 .grid-container > div, .grid-container-media > div, .grid-container-contact > div {
     align-self: stretch;
     justify-self: stretch;
+    color: white;
 }
-
-/* color pallete
- darkest to lightest
-    #140000
-    #240006
-    #310006
-    #550010
-    #960014
- */
-
-
+.grid-container, .grid-container-media, .grid-container-contact {
+    padding: 2vh;
+    margin: 2vh;
+    display: grid;
+    grid-column-gap: 1vh;
+}
+.grid-container-contact #contact-one  h2, .grid-container-contact #contact-two h2 {
+    margin: 2vh;
+    font-size: 3vh;
+}
+.grid-container-contact #contact-one p,  .grid-container-contact #contact-two p{
+    margin: 2vh;
+    font-size: 2vh;
+}
+.grid-container-contact #contact-one img, .grid-container-contact #contact-two img {
+    height: 10vh;
+}
 footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 1%;
-    max-height: 5%;
+    height: 15vh;
 }
-
 #main-two img {
     align-self: center;
     margin: auto;
     max-height: 300px;
 }
-
 nav {
-    background-color: #110a0a;
     display: flex;
     justify-content: space-around;
     height: 10vh;
@@ -168,57 +105,25 @@ nav {
     box-shadow: inset 0 0 1vh #3a1c21;
     box-shadow: .5vh .5vh 0.5vh #270c113f;
 }
-
-header {
-    margin: 0;
-    padding: 0;
-    background-color: #1d0f0f;
-    height: 10vh;
-    display: flex;
-    flex-basis: auto;
-    align-items: center;
-    font-size: 2.5vh;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 5px rgb(73, 57, 57);
-    box-shadow: inset 0 0 1vh #382125;
-    border-bottom: 0.1vh solid #362024;
-}
-
-header h1 {
-    margin: 0;
-    
-}
-
-.grid-container-contact #contact-one  h2, .grid-container-contact #contact-two h2 {
-    margin: 2vh;
-    font-size: 3vh;
-}
-
-.grid-container-contact #contact-one p,  .grid-container-contact #contact-two p{
-    margin: 2vh;
-    font-size: 2vh;
-}
-
 details {
     margin: 3vh;
 }
-
 button {
     cursor: pointer;
     border-radius: 30px;
     width: 10vh;
     margin: 1.5vh;
-    background-color: #2c0d12;
-    color: white;
     min-width: 65px;
     flex-basis: auto;
-    box-shadow: inset 0 0 1vh #701f2c6c;
-    box-shadow: .5vh .5vh 0.5vh #270c113f;
 }
-
-
+button img {
+    max-width: 3vw;
+    max-height: 3vh;
+    margin-top: 0.5vh;
+}
 #main-one {
     grid-area: main-one;
+    padding: 2vw;
 }
 #main-two {
     grid-area: main-two;
@@ -226,63 +131,47 @@ button {
 }
 #main-three {
     grid-area: main-three;
+    padding: 2vw;
 }
-
-#main-three h2, #main-three p {
-    text-indent: 2em;
-}
-
 #main-three ul {
     padding-left: 4em; 
 }
-
 #main-four {
     grid-area: main-four;
+    padding: 2vw;
 }
-
 #footer {
     grid-area: footer;
 }
-
 #media-one {
-    grid-area: media-one;
-
+    order: 1;
 }
-
 #media-two {
-    grid-area: media-two;
+    order: 2;
 }
-
 #media-three {
-    grid-area: media-three;
+    order: 3;
 }
-
 #media-four {
-    grid-area: media-four;
+    order: 4;
 }
-
 #media-five {
-    grid-area: media-five;
+    order: 5;
 }
-
 #media-six {
-    grid-area: media-six;
+    order: 6;
 }
-
 #media-seven {
-    grid-area: media-seven;
+    order: 7;
 }
-
 #media-eight {
-    grid-area: media-eight;
+    order: 8;
 }
-
-
-
-.grid-container-contact #contact-one img, .grid-container-contact #contact-two img {
-    height: 10vh;
+#media-footer {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
 }
-
 #contact-one {
     grid-area: contact-one;
     display: flex;
@@ -291,7 +180,6 @@ button {
     justify-content: center;
     text-align: center;
 }
-
 #contact-two {
     grid-area: contact-two;
     display: flex;
@@ -300,19 +188,17 @@ button {
     justify-content: center;
     text-align: center;
 }
-
-#contact-three {
-    grid-area: contact-three;
+#contact-footer {
+    grid-area: contact-footer;
 }
 
+/* ID's to hide pages */
 #media {
     display: none;
 }
-
 #projects {
     display: none;
 }
-
 #contact {
     display: none;
 }
