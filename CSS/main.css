@@ -24,6 +24,40 @@
     .grid-container, .grid-container-media, .grid-container-contact {
         grid-row-gap: 0.5vw;
     }
+    #register-box {
+        margin-top: 1vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    #box-1, #box-2 {
+        flex-direction: column;
+    }
+    #register-bottom {
+        flex-direction: row;
+    }
+    .label-item label {
+        width: 10vw;
+    }
+    #box-1 {
+        margin-left: 15vw;
+    }
+    #box-2 {
+        margin-right: 10vw;
+    }
+    #register-heading {
+        white-space: nowrap;
+    }
+    #comments {
+        width: 15vw;
+        height: 15vh;
+    }
+    #register-button {
+        height: 8vh;
+    }
+    #register-top {
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 768px) {
     /* for tablet view */
@@ -35,6 +69,39 @@
     .grid-container, .grid-container-media, .grid-container-contact {
         grid-row-gap: 1.5vw;
     }
+    #box-1, #box-2 {
+        flex-direction: column;
+    }
+    #register-bottom {
+        flex-direction: column;
+    }
+    #box-2 {
+        margin-left: 15vw;
+    }
+    #box-1 {
+        margin-left: 10vw;
+    }
+    .label-item label {
+        width: 25vw;
+    }
+    .register-heading {
+        margin-bottom: 5vh;
+        white-space: nowrap;
+    }
+    #comments {
+        margin-left: 5vw;
+        width: 45vw;
+        height: 15vh;
+    }
+    #register-button {
+        height: 15vh;
+        width: 100vw;
+        align-self: center;
+        margin-left: 65vw;
+    }
+    #register-top {
+        margin-left: 25vw;
+    }
 }
 @media screen and (max-width: 450px) {
     /* for mobile */
@@ -44,6 +111,27 @@
     #main-two img {
         height: 50vw;
     }
+    #register-bottom {
+        flex-wrap: wrap;
+    }
+    #box-1, #box-2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .label-item label {
+        width: 25vw;
+    }
+    .register-heading {
+        margin-left: 0;
+    }
+    #comments {
+        width: 40vw;
+    }
+    #register-button {
+        height: 15vh;
+        align-self: center;
+    }
+
 }
 /* start of normal content CSS (not size dependent) */
 html, body {
@@ -61,6 +149,98 @@ header {
 }
 header h1 {
     margin: 0;
+}
+#register {
+    font-size: 15pt;
+}
+#register-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#register-top {
+    margin-bottom: 0;
+    
+}
+#register-bottom{
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+#box-1 {
+    display: flex;
+    width: 50%;
+
+    margin-top: 0;
+    padding-top: 0;
+}
+#box-2 {
+    display: flex;
+    width: 50%;
+
+    padding-top: 0;
+    margin-top: 0;
+}
+#register-button {
+    display: flex;
+    justify-content: left;
+    margin-top: 2vh;
+    margin-right: 0;
+}
+#register-title {
+    font-size: 20pt;
+}
+.register-heading {
+    font-size: 20pt;
+}
+.label-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.8vh;
+}
+
+#comments {
+    border-radius: 0.3vw;
+}
+#checkbox {
+    list-style: none;
+    margin: 0;
+
+}
+#checkbox li {
+    padding: 1vh;
+}
+.label-item input {
+    border-radius: 0.3vw;
+    height: 2.5vh;
+}
+input.was-validated:invalid {
+    color: red;
+    background-color: lightcoral;
+    border: 2px solid red;
+}
+input.was-validated:valid {
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+input.was-validated:invalid ~ div {
+    display: block;
+}
+input:valid ~ div {
+    display: none;
+}
+input:invalid ~ div {
+    display: none;
+}
+#errorMessage {
+    color: red;
+}
+#successMessage {
+    font-size: 25pt;
+    font-weight: bold;
+    margin: auto;
 }
 .flex-container-media {
     display: flex;
@@ -180,6 +360,11 @@ button img {
     margin-right: 2vh;
     margin-bottom: 2vh;
 }
+#register-footer {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+}
 #contact-one {
     grid-area: contact-one;
     display: flex;
@@ -208,5 +393,8 @@ button img {
     display: none;
 }
 #contact {
+    display: none;
+}
+#register {
     display: none;
 }

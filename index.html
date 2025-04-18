@@ -6,6 +6,23 @@
         - Updated some details in main.
         - Changed some contact details.
 -->
+<!--
+
+ 
+Project:  Project 5
+Name: Zoe Green
+Submitted: 4/18/2025
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection:  I learned a lot about JavaScript from this project!
+ 
+-->
 <!DOCTYPE html>
 <head>
     <title>Zoe Green - Portfolio / About Me</title>
@@ -23,6 +40,7 @@
                 <button onclick="openPage('home')">Home</button>
                 <button onclick="openPage('media')">Media</button>
                 <button onclick="openPage('contact')">Contact</button>
+                <button onclick="openPage('register')">Log Visit</button>
                 <button id="lightdark" onclick="toggleLightDark()"><img src="Img/lightdark.png"></button>
             </nav>
         </aside>
@@ -58,7 +76,7 @@
                     <h2>My Interests</h2>
                     <p>One of my interests besides programming includes gaming. I have played video games since I was a very young child and they have always been a big part of my life.</p>
                     <p>Some of my current favorite games include the Civilization series by Sid Meier, Lethal Company, and The Binding of Isaac: Repentence. You can find many of my gamer tags in the contact section.</p>
-                    <p>Another one of my biggest interests is music, particularly metal music. My favorite bands are Katatonia, Opeth, and Blind Guardian. The next concert I am going to is <i>Machine Head</i> with <i>In Flames</i> and <i>Lacuna Coil</i> in Salt Lake on April 13, 2025. In the media section, you can see pictures/videos I took at concerts, along with a couple Spotify embeds with some music I like.</p>
+                    <p>Another one of my biggest interests is music, particularly metal music. My favorite bands are Katatonia, Opeth, and Blind Guardian. The next concert I am going to is <i>Deafheaven</i> with <i>Gatecreeper</i> and <i>Trauma Ray</i> in Salt Lake City on April 28, 2025. In the media section, you can see pictures/videos I took at concerts, along with a couple Spotify embeds with some music I like.</p>
                     <p>I enjoy creating art, and nature is one of my biggest inspirations. Utah has such beautiful scenery and I feel blessed to live so close to it; I live minutes away from American Fork Canyon! Some pictures of Utah scenery I have taken can be found on the Media page.</p>
                 </div>
                 <div id="footer">
@@ -173,7 +191,101 @@
                 </div>
             </div>
         </section>
-        <script src="JS/myscript.js"></script>
+        <section id="register" class="page">
+            <div id="register-box">
+                <div id="successMessage" class="successMessage" style="display: none;">
+                    Success! Thank you for logging your visit.
+                </div>
+                <form id="myform" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+                    <div id="register-top">
+                        <h1 id="register-title">Visitor Registration Form</h1>
+                    </div>
+                    <div id="register-bottom">
+                        <div id="box-1">
+                            <h3 class="register-heading">Personal Information</h3>
+                            <div class="label-item">
+                                <label for="first-name">First Name</label>
+                                <input class="textbox" type="text" id="first-name" name="first-name" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="last-name">Last Name</label>
+                                <input class="textbox" type="text" id="last-name" name="last-name" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="address">Address</label>
+                                <input class="textbox" type="text" id="address" name="address" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="city">City</label>
+                                <input class="textbox" type="text" id="city" name="city" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="state">State</label>
+                                <input class="textbox" type="text" id="state" name="state" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="zip">Zip</label>
+                                <input class="textbox" type="text" id="zip" name="zip" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="phone">Cell Phone</label>
+                                <input class="textbox" type="text" id="phone" name="phone" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="label-item">
+                                <label for="email">Email</label>
+                                <input class="textbox" type="text" id="email" name="email" required>
+                                <div class="errorMessage"></div>
+                            </div>
+                        </div>
+                        <div id="box-2">
+                            <h3 class="register-heading">How did you find my page?</h3>
+                            <ul id="checkbox">
+                                <li>
+                                    <input type="checkbox" id="internet" name="find-page">
+                                    <label for="internet">Internet</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="friend" name="find-page">
+                                    <label for="friend">Friend</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="google" name="find-page">
+                                    <label for="google">Google</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="other" name="find-page">
+                                    <label for="other">Other</label>
+                                    <div class="errorMessage"></div>
+                                </li>
+                            </ul>
+                            <h4>Any additional comments?</h4>
+                            <label for="comments">Comments</label>
+                            <textarea id="comments" name="comments"></textarea>
+                            <div id="register-button">
+                                <button id="submitBtn" type="submit">Submit</button>
+                            </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div id="register-footer">
+                <footer>
+                    <p>Zoe Green</p>
+                    <p>10996896@uvu.edu</p>
+                    <p>Created 2025</p>
+                </footer>
+            </div>
+        </section>
+        <script src="JS/page.js"></script>
+        <script src="JS/validate.js"></script>
+        <script src="JS/main.js"></script>
     </body>
     </div>
 </html>

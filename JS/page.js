@@ -1,3 +1,4 @@
+
 function openPage(pageName) {
     var i;
     var x = document.getElementsByClassName("page");

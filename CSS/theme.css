@@ -39,6 +39,10 @@ header {
     box-shadow: inset 0 0 1vh #585045;
     border-bottom: 0.1vh solid #dacdc7; /*border, but does provide color*/
 }
+#register-box {
+    background-color: #c9a899;
+    border: 2vh solid #968479; 
+}
 .flex-container-media {
     background-color: #c9a899;
     border: 2vh solid #968479; /*border, but does provide color*/
@@ -65,7 +69,7 @@ button {
     box-shadow: inset 0 0 1vh #ebe2d7;
     box-shadow: .5vh .5vh 0.5vh #270c113f;
 }
-#media-footer {
+#media-footer, #register-footer {
     background-color: #c9a899;
     border-bottom: 1vw solid #968479; /*border, but does provide color*/
     border-left: 1vw solid #968479; /*border, but does provide color*/
